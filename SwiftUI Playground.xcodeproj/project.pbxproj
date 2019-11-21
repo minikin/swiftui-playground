@@ -56,12 +56,8 @@
 		8B15E6F32386930D000E30F8 /* SwiftUI Playground */ = {
 			isa = PBXGroup;
 			children = (
-				8B15E6F42386930D000E30F8 /* AppDelegate.swift */,
-				8B15E6F62386930D000E30F8 /* SceneDelegate.swift */,
-				8B15E6F82386930D000E30F8 /* ContentView.swift */,
-				8B15E6FA2386930E000E30F8 /* Assets.xcassets */,
-				8B15E6FF2386930E000E30F8 /* LaunchScreen.storyboard */,
-				8B15E7022386930E000E30F8 /* Info.plist */,
+				8B15E70923869C6C000E30F8 /* Application */,
+				8B15E70823869931000E30F8 /* Sleep & Coffee */,
 				8B15E6FC2386930E000E30F8 /* Preview Content */,
 			);
 			path = "SwiftUI Playground";
@@ -73,6 +69,34 @@
 				8B15E6FD2386930E000E30F8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B15E70823869931000E30F8 /* Sleep & Coffee */ = {
+			isa = PBXGroup;
+			children = (
+				8B15E6F82386930D000E30F8 /* ContentView.swift */,
+			);
+			path = "Sleep & Coffee";
+			sourceTree = "<group>";
+		};
+		8B15E70923869C6C000E30F8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8B15E7022386930E000E30F8 /* Info.plist */,
+				8B15E6F42386930D000E30F8 /* AppDelegate.swift */,
+				8B15E6F62386930D000E30F8 /* SceneDelegate.swift */,
+				8B15E6FF2386930E000E30F8 /* LaunchScreen.storyboard */,
+				8B15E70A23869C81000E30F8 /* Resources */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8B15E70A23869C81000E30F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B15E6FA2386930E000E30F8 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +312,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Playground/Preview Content\"";
 				DEVELOPMENT_TEAM = GW82A8W73Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI Playground/Info.plist";
+				INFOPLIST_FILE = "SwiftUI Playground/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +332,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Playground/Preview Content\"";
 				DEVELOPMENT_TEAM = GW82A8W73Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI Playground/Info.plist";
+				INFOPLIST_FILE = "SwiftUI Playground/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
