@@ -25,46 +25,43 @@ struct SleepCalculatorView: View {
     }
 
     var body: some View {
-        NavigationView {
-            Form {
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("When do you want tp wake up?").font(.headline)
-                    DatePicker("Please enter time",
-                               selection: $wakeUp,
-                               displayedComponents: .hourAndMinute)
-                        .labelsHidden()
-                        .datePickerStyle(WheelDatePickerStyle())
+        Form {
+            VStack(alignment: .leading, spacing: 0) {
+                Text("When do you want tp wake up?").font(.headline)
+                DatePicker("Please enter time",
+                           selection: $wakeUp,
+                           displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+                    .datePickerStyle(WheelDatePickerStyle())
+            }
+
+            VStack(alignment: .leading, spacing: 0) {
+                Text("Desired amount of sleep").font(.headline)
+
+                Stepper(value: $sleepAmount, in: 4 ... 12, step: 0.25) {
+                    Text("\(sleepAmount, specifier: "%g") hours")
                 }
+            }
 
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Desired amount of sleep").font(.headline)
-
-                    Stepper(value: $sleepAmount, in: 4 ... 12, step: 0.25) {
-                        Text("\(sleepAmount, specifier: "%g") hours")
+            VStack(alignment: .leading, spacing: 0) {
+                Text("Daily coffee intake").font(.headline)
+                Stepper(value: $coffeeAmount, in: 1 ... 20) {
+                    if coffeeAmount == 1 {
+                        Text("1 cup")
+                    } else {
+                        Text("\(coffeeAmount) cups")
                     }
                 }
+            }
 
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Daily coffee intake").font(.headline)
-                    Stepper(value: $coffeeAmount, in: 1 ... 20) {
-                        if coffeeAmount == 1 {
-                            Text("1 cup")
-                        } else {
-                            Text("\(coffeeAmount) cups")
-                        }
-                    }
-                }
-							
-                Button(action: calculateBedtime) {
-									Text("Calculate").fontWeight(.heavy)
-                }.alert(isPresented: $showingAlert) {
-                    Alert(title: Text(alertTitle),
-                          message: Text(alertMessage),
-                          dismissButton: .default(Text("OK")))
-							}
-
-            }.navigationBarTitle("Sleep More")
-        }
+        }.navigationBarTitle("Sleep More")
+            .navigationBarItems(trailing: Button(action: calculateBedtime) {
+                Text("Calculate").fontWeight(.heavy).foregroundColor(Color.red)
+            }.alert(isPresented: $showingAlert) {
+                Alert(title: Text(alertTitle),
+                      message: Text(alertMessage),
+                      dismissButton: .default(Text("OK")))
+            })
     }
 
     private func calculateBedtime() {
@@ -79,17 +76,14 @@ struct SleepCalculatorView: View {
                                                        coffee: Double(coffeeAmount))
 
             let sleepTime = wakeUp - prediction.actualSleep
-
             let formatter = DateFormatter()
             formatter.timeStyle = .short
             alertTitle = "Your ideal bedtime is ..."
             alertMessage = formatter.string(from: sleepTime)
-
         } catch {
             alertTitle = "Error"
             alertMessage = "Something went wrong..."
         }
-
         showingAlert = true
     }
 }
