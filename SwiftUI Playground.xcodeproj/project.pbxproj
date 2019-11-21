@@ -14,6 +14,9 @@
 		8B15E6FE2386930E000E30F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E6FD2386930E000E30F8 /* Preview Assets.xcassets */; };
 		8B15E7012386930E000E30F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E6FF2386930E000E30F8 /* LaunchScreen.storyboard */; };
 		8B15E70D23869D60000E30F8 /* BetterRest.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E70C23869D60000E30F8 /* BetterRest.csv */; };
+		8B28C28F2386AA0100E7638F /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C28E2386AA0100E7638F /* SleepCalculator.mlmodel */; };
+		8B28C2912386BF0600E7638F /* SleepCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2902386BF0600E7638F /* SleepCalculatorView.swift */; };
+		8B28C2962386C8B100E7638F /* PlaygroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2952386C8B100E7638F /* PlaygroundCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		8B15E7002386930E000E30F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B15E7022386930E000E30F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B15E70C23869D60000E30F8 /* BetterRest.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BetterRest.csv; sourceTree = "<group>"; };
+		8B28C28E2386AA0100E7638F /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		8B28C2902386BF0600E7638F /* SleepCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCalculatorView.swift; sourceTree = "<group>"; };
+		8B28C2952386C8B100E7638F /* PlaygroundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				8B15E70B23869D56000E30F8 /* Resources */,
-				8B15E6F82386930D000E30F8 /* ContentView.swift */,
+				8B28C2902386BF0600E7638F /* SleepCalculatorView.swift */,
 			);
 			path = "Sleep & Coffee";
 			sourceTree = "<group>";
@@ -85,11 +91,10 @@
 		8B15E70923869C6C000E30F8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				8B15E7022386930E000E30F8 /* Info.plist */,
 				8B15E6F42386930D000E30F8 /* AppDelegate.swift */,
 				8B15E6F62386930D000E30F8 /* SceneDelegate.swift */,
-				8B15E6FF2386930E000E30F8 /* LaunchScreen.storyboard */,
 				8B15E70A23869C81000E30F8 /* Resources */,
+				8B28C2922386BF4F00E7638F /* Views */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -97,6 +102,8 @@
 		8B15E70A23869C81000E30F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8B15E6FF2386930E000E30F8 /* LaunchScreen.storyboard */,
+				8B15E7022386930E000E30F8 /* Info.plist */,
 				8B15E6FA2386930E000E30F8 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -105,9 +112,19 @@
 		8B15E70B23869D56000E30F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8B28C28E2386AA0100E7638F /* SleepCalculator.mlmodel */,
 				8B15E70C23869D60000E30F8 /* BetterRest.csv */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B28C2922386BF4F00E7638F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B15E6F82386930D000E30F8 /* ContentView.swift */,
+				8B28C2952386C8B100E7638F /* PlaygroundCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B28C2962386C8B100E7638F /* PlaygroundCell.swift in Sources */,
+				8B28C28F2386AA0100E7638F /* SleepCalculator.mlmodel in Sources */,
 				8B15E6F52386930D000E30F8 /* AppDelegate.swift in Sources */,
 				8B15E6F72386930D000E30F8 /* SceneDelegate.swift in Sources */,
 				8B15E6F92386930D000E30F8 /* ContentView.swift in Sources */,
+				8B28C2912386BF0600E7638F /* SleepCalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Playground/Preview Content\"";
 				DEVELOPMENT_TEAM = GW82A8W73Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI Playground/Application/Info.plist";
+				INFOPLIST_FILE = "SwiftUI Playground/Application/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +364,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Playground/Preview Content\"";
 				DEVELOPMENT_TEAM = GW82A8W73Z;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI Playground/Application/Info.plist";
+				INFOPLIST_FILE = "SwiftUI Playground/Application/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
