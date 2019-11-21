@@ -13,6 +13,7 @@
 		8B15E6FB2386930E000E30F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E6FA2386930E000E30F8 /* Assets.xcassets */; };
 		8B15E6FE2386930E000E30F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E6FD2386930E000E30F8 /* Preview Assets.xcassets */; };
 		8B15E7012386930E000E30F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E6FF2386930E000E30F8 /* LaunchScreen.storyboard */; };
+		8B15E70D23869D60000E30F8 /* BetterRest.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E70C23869D60000E30F8 /* BetterRest.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8B15E6FD2386930E000E30F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B15E7002386930E000E30F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B15E7022386930E000E30F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B15E70C23869D60000E30F8 /* BetterRest.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BetterRest.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		8B15E70823869931000E30F8 /* Sleep & Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				8B15E70B23869D56000E30F8 /* Resources */,
 				8B15E6F82386930D000E30F8 /* ContentView.swift */,
 			);
 			path = "Sleep & Coffee";
@@ -95,6 +98,14 @@
 			isa = PBXGroup;
 			children = (
 				8B15E6FA2386930E000E30F8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B15E70B23869D56000E30F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B15E70C23869D60000E30F8 /* BetterRest.csv */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -157,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B15E70D23869D60000E30F8 /* BetterRest.csv in Resources */,
 				8B15E7012386930E000E30F8 /* LaunchScreen.storyboard in Resources */,
 				8B15E6FE2386930E000E30F8 /* Preview Assets.xcassets in Resources */,
 				8B15E6FB2386930E000E30F8 /* Assets.xcassets in Resources */,

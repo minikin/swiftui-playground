@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SwiftUI Playground
 //
-//  Created by Developer on 21.11.19.
+//  Created by Sasha Prokhorenko on 21.11.19.
 //  Copyright © 2019 Sasha Prokhorenko. All rights reserved.
 //
 
