@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8B15E70923869C6C000E30F8 /* Application */,
-				8B15E70823869931000E30F8 /* Sleep & Coffee */,
+				8B15E70823869931000E30F8 /* Sleep More */,
 				8B15E6FC2386930E000E30F8 /* Preview Content */,
 			);
 			path = "SwiftUI Playground";
@@ -79,13 +79,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8B15E70823869931000E30F8 /* Sleep & Coffee */ = {
+		8B15E70823869931000E30F8 /* Sleep More */ = {
 			isa = PBXGroup;
 			children = (
 				8B15E70B23869D56000E30F8 /* Resources */,
 				8B28C2902386BF0600E7638F /* SleepCalculatorView.swift */,
 			);
-			path = "Sleep & Coffee";
+			path = "Sleep More";
 			sourceTree = "<group>";
 		};
 		8B15E70923869C6C000E30F8 /* Application */ = {
