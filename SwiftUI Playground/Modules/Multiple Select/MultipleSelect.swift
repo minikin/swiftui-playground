@@ -9,21 +9,21 @@
 import SwiftUI
 
 struct MultipleSelect: View {
-    @State private var showLanguageSheet = false
+    @State private var showMotorsSelection = false
     @State private var selectedItem = 0
-    @ObservedObject var preferedEngines = PreferedEngines()
+    @ObservedObject var preferedMotors = PreferedMotors()
 
     var body: some View {
         VStack {
             Form {
                 Section(header: Text("Types").font(.caption)) {
                     Button(action: {
-                        self.showLanguageSheet.toggle()
+                        self.showMotorsSelection.toggle()
                     }) {
                         HStack {
                             Text("Select multiply items").foregroundColor(Color.black)
                             Spacer()
-                            Text("\(preferedEngines.motors.count)")
+                            Text("\(preferedMotors.motors.count)")
                                 .foregroundColor(Color(UIColor.systemGray))
                                 .font(.body)
                             Image(systemName: "chevron.right")
@@ -31,8 +31,8 @@ struct MultipleSelect: View {
                                 .font(Font.body.weight(.medium))
                         }
                     }
-                    .sheet(isPresented: $showLanguageSheet) {
-                        MotorPickerView(self.preferedEngines)
+                    .sheet(isPresented: $showMotorsSelection) {
+                        MotorPickerView(self.preferedMotors)
                     }
 
                     Picker(selection: $selectedItem, label: Text("Select one item")) {

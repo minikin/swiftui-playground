@@ -8,6 +8,6 @@
 
 import Combine
 
-final class PreferedEngines: ObservableObject {
+final class PreferedMotors: ObservableObject {
     @Published var motors = [Motors]()
 }

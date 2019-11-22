@@ -10,11 +10,11 @@ import SwiftUI
 
 struct MotorPickerView: View {
     @State private var selections = [Motors]()
-    @ObservedObject var preferedEngines: PreferedEngines
+    @ObservedObject var preferedMotors: PreferedMotors
     @Environment(\.presentationMode) var presentationMode
 
-    init(_ preferedEngines: PreferedEngines) {
-        self.preferedEngines = preferedEngines
+    init(_ preferedMotors: PreferedMotors) {
+        self.preferedMotors = preferedMotors
     }
 
     var body: some View {
@@ -32,12 +32,12 @@ struct MotorPickerView: View {
                     }
                 }
             }
-            .onAppear(perform: { self.selections = self.preferedEngines.motors })
+            .onAppear(perform: { self.selections = self.preferedMotors.motors })
             .listStyle(GroupedListStyle())
             .navigationBarTitle("Engine Types", displayMode: .inline)
             .navigationBarItems(trailing:
                 Button(action: {
-                    self.preferedEngines.motors = self.selections
+                    self.preferedMotors.motors = self.selections
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     Text("OK")

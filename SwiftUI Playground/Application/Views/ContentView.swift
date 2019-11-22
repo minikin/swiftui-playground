@@ -15,7 +15,7 @@ struct ContentView: View {
                 PlaygroundCell(title: "Sleep More", icon: "clock", detailsView: SleepCalculatorView())
                 PlaygroundCell(title: "Multiple Select", icon: "car", detailsView: MultipleSelect())
             }.listStyle(GroupedListStyle())
-                .navigationBarTitle("SwiftUI Playground")
+                .navigationBarTitle("SwiftUI Examples")
         }
     }
 }
