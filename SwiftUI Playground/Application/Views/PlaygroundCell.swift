@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PlaygroundCell<Content: View>: View {
-		let id: UUID = UUID()
+    let id: UUID = UUID()
     let title: String
     let icon: String
     let content: () -> Content
@@ -32,6 +32,6 @@ struct PlaygroundCell<Content: View>: View {
 
 struct PlaygroundCell_Previews: PreviewProvider {
     static var previews: some View {
-        PlaygroundCell(title: "title", icon: "clock") { Text("Test") }
+        PlaygroundCell(title: "title", icon: "clock") { Text("test") }
     }
 }

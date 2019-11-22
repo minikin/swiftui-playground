@@ -10,8 +10,9 @@ import SwiftUI
 
 struct MultipleSelect: View {
     @State private var showMotorsSelection = false
-    @State private var selectedItem = 0
+    @State private var selectedItem = Color.clear
     @ObservedObject var preferedMotors = PreferedMotors()
+    private let colors: [Color] = [.red, .green, .blue]
 
     var body: some View {
         VStack {
@@ -35,8 +36,10 @@ struct MultipleSelect: View {
                         MotorPickerView(self.preferedMotors)
                     }
                     Picker(selection: $selectedItem, label: Text("Select one item")) {
-                        ForEach(1 ... 10, id: \.self) {
-                            Text("\($0)")
+                        ForEach(colors, id: \.self) { color in
+                            Text(color.description.capitalized)
+                                .padding()
+                                .background(color)
                         }
                     }
                 }
