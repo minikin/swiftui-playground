@@ -22,6 +22,7 @@
 		8B28C29E2387F53000E7638F /* SelectableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C29D2387F53000E7638F /* SelectableRow.swift */; };
 		8B28C2A02387F5FD00E7638F /* MotorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C29F2387F5FD00E7638F /* MotorPickerView.swift */; };
 		8B28C2A22387F8DF00E7638F /* PreferedEngines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2A12387F8DF00E7638F /* PreferedEngines.swift */; };
+		8B28C2A5238827B900E7638F /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2A4238827B900E7638F /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		8B28C29D2387F53000E7638F /* SelectableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableRow.swift; sourceTree = "<group>"; };
 		8B28C29F2387F5FD00E7638F /* MotorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorPickerView.swift; sourceTree = "<group>"; };
 		8B28C2A12387F8DF00E7638F /* PreferedEngines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferedEngines.swift; sourceTree = "<group>"; };
+		8B28C2A4238827B900E7638F /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				8B28C29F2387F5FD00E7638F /* MotorPickerView.swift */,
 				8B28C29B2387F01B00E7638F /* Motors.swift */,
 				8B28C2992387ECEA00E7638F /* MultipleSelect.swift */,
+				8B28C2A4238827B900E7638F /* PickerView.swift */,
 				8B28C2A12387F8DF00E7638F /* PreferedEngines.swift */,
 				8B28C29D2387F53000E7638F /* SelectableRow.swift */,
 			);
@@ -236,6 +239,7 @@
 				8B15E6F52386930D000E30F8 /* AppDelegate.swift in Sources */,
 				8B28C29C2387F01B00E7638F /* Motors.swift in Sources */,
 				8B28C29A2387ECEA00E7638F /* MultipleSelect.swift in Sources */,
+				8B28C2A5238827B900E7638F /* PickerView.swift in Sources */,
 				8B15E6F72386930D000E30F8 /* SceneDelegate.swift in Sources */,
 				8B15E6F92386930D000E30F8 /* ContentView.swift in Sources */,
 				8B28C2A22387F8DF00E7638F /* PreferedEngines.swift in Sources */,
