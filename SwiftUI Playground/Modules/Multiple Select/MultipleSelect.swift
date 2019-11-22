@@ -34,7 +34,6 @@ struct MultipleSelect: View {
                     .sheet(isPresented: $showMotorsSelection) {
                         MotorPickerView(self.preferedMotors)
                     }
-
                     Picker(selection: $selectedItem, label: Text("Select one item")) {
                         ForEach(1 ... 10, id: \.self) {
                             Text("\($0)")

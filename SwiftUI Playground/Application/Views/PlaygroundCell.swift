@@ -9,12 +9,13 @@
 import SwiftUI
 
 struct PlaygroundCell<Content: View>: View {
+		let id: UUID = UUID()
     let title: String
     let icon: String
-    let detailsView: Content
+    let content: () -> Content
 
     var body: some View {
-        NavigationLink(destination: detailsView) {
+        NavigationLink(destination: content()) {
             HStack {
                 Image(systemName: icon)
                 Text(title)
@@ -22,15 +23,15 @@ struct PlaygroundCell<Content: View>: View {
         }
     }
 
-    init(title: String, icon: String, detailsView: Content) {
+    init(title: String, icon: String, @ViewBuilder content: @escaping () -> Content) {
         self.title = title
         self.icon = icon
-        self.detailsView = detailsView
+        self.content = content
     }
 }
 
 struct PlaygroundCell_Previews: PreviewProvider {
     static var previews: some View {
-        PlaygroundCell(title: "title", icon: "clock", detailsView: Text("Test"))
+        PlaygroundCell(title: "title", icon: "clock") { Text("Test") }
     }
 }

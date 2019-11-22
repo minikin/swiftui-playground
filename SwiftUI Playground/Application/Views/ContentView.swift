@@ -12,10 +12,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                PlaygroundCell(title: "Sleep More", icon: "clock", detailsView: SleepCalculatorView())
-                PlaygroundCell(title: "Multiple Select", icon: "car", detailsView: MultipleSelect())
-            }.listStyle(GroupedListStyle())
-                .navigationBarTitle("SwiftUI Examples")
+                PlaygroundCell(title: "Sleep More", icon: "clock") { SleepCalculatorView() }
+                PlaygroundCell(title: "Multiple Select", icon: "car") { MultipleSelect() }
+            }.listStyle(GroupedListStyle()).navigationBarTitle("SwiftUI Examples").onAppear()
         }
     }
 }
