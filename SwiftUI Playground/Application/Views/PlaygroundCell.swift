@@ -10,20 +10,27 @@ import SwiftUI
 
 struct PlaygroundCell<Content: View>: View {
     let title: String
+    let icon: String
     let detailsView: Content
 
     var body: some View {
-        NavigationLink(destination: detailsView) { Text(title) }
+        NavigationLink(destination: detailsView) {
+            HStack {
+                Image(systemName: icon)
+                Text(title)
+            }
+        }
     }
 
-    init(title: String, detailsView: Content) {
+    init(title: String, icon: String, detailsView: Content) {
         self.title = title
+        self.icon = icon
         self.detailsView = detailsView
     }
 }
 
 struct PlaygroundCell_Previews: PreviewProvider {
     static var previews: some View {
-        PlaygroundCell(title: "title", detailsView: Text("Test"))
+        PlaygroundCell(title: "title", icon: "clock", detailsView: Text("Test"))
     }
 }
