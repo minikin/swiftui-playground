@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 PlaygroundCell(title: "Sleep More", icon: "clock", detailsView: SleepCalculatorView())
-								PlaygroundCell(title: "Multiple Select", icon: "list.bullet", detailsView: SleepCalculatorView())
+                PlaygroundCell(title: "Multiple Select", icon: "car", detailsView: SleepCalculatorView())
             }.listStyle(GroupedListStyle())
                 .navigationBarTitle("SwiftUI Playground")
         }

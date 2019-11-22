@@ -19,6 +19,7 @@
 		8B28C2962386C8B100E7638F /* PlaygroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2952386C8B100E7638F /* PlaygroundCell.swift */; };
 		8B28C29A2387ECEA00E7638F /* MultipleSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2992387ECEA00E7638F /* MultipleSelect.swift */; };
 		8B28C29C2387F01B00E7638F /* Motors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C29B2387F01B00E7638F /* Motors.swift */; };
+		8B28C29E2387F53000E7638F /* SelectableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C29D2387F53000E7638F /* SelectableRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8B28C2952386C8B100E7638F /* PlaygroundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundCell.swift; sourceTree = "<group>"; };
 		8B28C2992387ECEA00E7638F /* MultipleSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelect.swift; sourceTree = "<group>"; };
 		8B28C29B2387F01B00E7638F /* Motors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motors.swift; sourceTree = "<group>"; };
+		8B28C29D2387F53000E7638F /* SelectableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				8B28C2992387ECEA00E7638F /* MultipleSelect.swift */,
 				8B28C29B2387F01B00E7638F /* Motors.swift */,
+				8B28C29D2387F53000E7638F /* SelectableRow.swift */,
 			);
 			path = "Multiple Select";
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				8B28C29A2387ECEA00E7638F /* MultipleSelect.swift in Sources */,
 				8B15E6F72386930D000E30F8 /* SceneDelegate.swift in Sources */,
 				8B15E6F92386930D000E30F8 /* ContentView.swift in Sources */,
+				8B28C29E2387F53000E7638F /* SelectableRow.swift in Sources */,
 				8B28C2912386BF0600E7638F /* SleepCalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,13 +7,13 @@
 //
 
 enum Motors {
-	case singleMotorRwd
-	case dualMotorAwd
-	case triMotorAwd
+    case singleMotorRwd
+    case dualMotorAwd
+    case triMotorAwd
 }
 
 extension Motors: CaseIterable, Identifiable {
-	var id: Motors {
-		self
-	}
+    var id: Motors {
+        self
+    }
 }
