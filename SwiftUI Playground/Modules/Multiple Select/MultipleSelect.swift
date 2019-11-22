@@ -36,8 +36,8 @@ struct MultipleSelect: View {
                     }
 
                     Picker(selection: $selectedItem, label: Text("Select one item")) {
-                        ForEach(0 ..< 10) { x in
-                            Text("\(x)")
+                        ForEach(1 ... 10, id: \.self) {
+                            Text("\($0)")
                         }
                     }
                 }
