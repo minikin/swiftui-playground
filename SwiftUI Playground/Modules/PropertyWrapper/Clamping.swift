@@ -7,6 +7,7 @@
 //
 
 import Foundation
+/// https://nshipster.com/propertywrapper/#transforming-values-on-property-assignment
 
 /// struct Solution {
 ///		@Clamping(0...14)
