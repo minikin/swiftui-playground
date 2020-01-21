@@ -17,6 +17,7 @@
 		8B1D220C23D70B01001A9E4C /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D220B23D70B01001A9E4C /* UserDefault.swift */; };
 		8B1D220E23D70B6D001A9E4C /* PropertyListValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D220D23D70B6D001A9E4C /* PropertyListValue.swift */; };
 		8B1D221023D70C5C001A9E4C /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D220F23D70C5C001A9E4C /* Key.swift */; };
+		8B1D221223D70D7D001A9E4C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D221123D70D7D001A9E4C /* Storage.swift */; };
 		8B28C28F2386AA0100E7638F /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C28E2386AA0100E7638F /* SleepCalculator.mlmodel */; };
 		8B28C2912386BF0600E7638F /* SleepCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2902386BF0600E7638F /* SleepCalculatorView.swift */; };
 		8B28C2962386C8B100E7638F /* PlaygroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2952386C8B100E7638F /* PlaygroundCell.swift */; };
@@ -41,6 +42,7 @@
 		8B1D220B23D70B01001A9E4C /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		8B1D220D23D70B6D001A9E4C /* PropertyListValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListValue.swift; sourceTree = "<group>"; };
 		8B1D220F23D70C5C001A9E4C /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		8B1D221123D70D7D001A9E4C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		8B28C28E2386AA0100E7638F /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		8B28C2902386BF0600E7638F /* SleepCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCalculatorView.swift; sourceTree = "<group>"; };
 		8B28C2952386C8B100E7638F /* PlaygroundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundCell.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				8B1D220B23D70B01001A9E4C /* UserDefault.swift */,
 				8B1D220D23D70B6D001A9E4C /* PropertyListValue.swift */,
 				8B1D220F23D70C5C001A9E4C /* Key.swift */,
+				8B1D221123D70D7D001A9E4C /* Storage.swift */,
 			);
 			path = PropertyWrapper;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				8B1D220E23D70B6D001A9E4C /* PropertyListValue.swift in Sources */,
 				8B1D221023D70C5C001A9E4C /* Key.swift in Sources */,
 				8B28C2A22387F8DF00E7638F /* PreferedEngines.swift in Sources */,
+				8B1D221223D70D7D001A9E4C /* Storage.swift in Sources */,
 				8B28C29E2387F53000E7638F /* SelectableRow.swift in Sources */,
 				8B28C2912386BF0600E7638F /* SleepCalculatorView.swift in Sources */,
 			);

@@ -2,7 +2,7 @@
 //  Key.swift
 //  SwiftUI Playground
 //
-//  Created by Developer on 21.01.20.
+//  Created by Sasha Prokhorenko on 21.01.20.
 //  Copyright © 2020 Sasha Prokhorenko. All rights reserved.
 //
 

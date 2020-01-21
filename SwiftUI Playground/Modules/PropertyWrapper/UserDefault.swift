@@ -9,11 +9,19 @@
 import Foundation
 
 @propertyWrapper
-struct UserDefault<T: PropertyListValue> {
+struct UserDefault<Value: PropertyListValue> {
     let key: Key
+    let defaultValue: Value
+    var userDefaults: UserDefaults
 
-    var wrappedValue: T? {
-        get { UserDefaults.standard.value(forKey: key.rawValue) as? T }
-        set { UserDefaults.standard.set(newValue, forKey: key.rawValue) }
+    init(_ key: Key, defaultValue: Value, userDefaults: UserDefaults = .standard) {
+        self.key = key
+        self.defaultValue = defaultValue
+        self.userDefaults = userDefaults
+    }
+
+    var wrappedValue: Value {
+        get { userDefaults.object(forKey: key.rawValue) as? Value ?? defaultValue }
+        set { userDefaults.set(newValue, forKey: key.rawValue) }
     }
 }
