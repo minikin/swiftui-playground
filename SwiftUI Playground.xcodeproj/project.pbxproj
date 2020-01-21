@@ -14,6 +14,11 @@
 		8B15E6FE2386930E000E30F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E6FD2386930E000E30F8 /* Preview Assets.xcassets */; };
 		8B15E7012386930E000E30F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E6FF2386930E000E30F8 /* LaunchScreen.storyboard */; };
 		8B15E70D23869D60000E30F8 /* SleepMore.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8B15E70C23869D60000E30F8 /* SleepMore.csv */; };
+		8B1D220C23D70B01001A9E4C /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D220B23D70B01001A9E4C /* UserDefault.swift */; };
+		8B1D220E23D70B6D001A9E4C /* PropertyListValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D220D23D70B6D001A9E4C /* PropertyListValue.swift */; };
+		8B1D221023D70C5C001A9E4C /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D220F23D70C5C001A9E4C /* Key.swift */; };
+		8B1D221223D70D7D001A9E4C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D221123D70D7D001A9E4C /* Storage.swift */; };
+		8B1D221423D71FF9001A9E4C /* Clamping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D221323D71FF9001A9E4C /* Clamping.swift */; };
 		8B28C28F2386AA0100E7638F /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C28E2386AA0100E7638F /* SleepCalculator.mlmodel */; };
 		8B28C2912386BF0600E7638F /* SleepCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2902386BF0600E7638F /* SleepCalculatorView.swift */; };
 		8B28C2962386C8B100E7638F /* PlaygroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B28C2952386C8B100E7638F /* PlaygroundCell.swift */; };
@@ -35,6 +40,11 @@
 		8B15E7002386930E000E30F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B15E7022386930E000E30F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B15E70C23869D60000E30F8 /* SleepMore.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SleepMore.csv; sourceTree = "<group>"; };
+		8B1D220B23D70B01001A9E4C /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		8B1D220D23D70B6D001A9E4C /* PropertyListValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListValue.swift; sourceTree = "<group>"; };
+		8B1D220F23D70C5C001A9E4C /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		8B1D221123D70D7D001A9E4C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		8B1D221323D71FF9001A9E4C /* Clamping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clamping.swift; sourceTree = "<group>"; };
 		8B28C28E2386AA0100E7638F /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		8B28C2902386BF0600E7638F /* SleepCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCalculatorView.swift; sourceTree = "<group>"; };
 		8B28C2952386C8B100E7638F /* PlaygroundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundCell.swift; sourceTree = "<group>"; };
@@ -130,6 +140,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8B1D220A23D70AE4001A9E4C /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D220B23D70B01001A9E4C /* UserDefault.swift */,
+				8B1D220D23D70B6D001A9E4C /* PropertyListValue.swift */,
+				8B1D220F23D70C5C001A9E4C /* Key.swift */,
+				8B1D221123D70D7D001A9E4C /* Storage.swift */,
+				8B1D221323D71FF9001A9E4C /* Clamping.swift */,
+			);
+			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
 		8B28C2922386BF4F00E7638F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +177,7 @@
 		8B28C2982387ECCB00E7638F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8B1D220A23D70AE4001A9E4C /* PropertyWrapper */,
 				8B15E70823869931000E30F8 /* Sleep More */,
 				8B28C2972387EB3500E7638F /* Multiple Select */,
 			);
@@ -233,8 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1D221423D71FF9001A9E4C /* Clamping.swift in Sources */,
 				8B28C2962386C8B100E7638F /* PlaygroundCell.swift in Sources */,
 				8B28C28F2386AA0100E7638F /* SleepCalculator.mlmodel in Sources */,
+				8B1D220C23D70B01001A9E4C /* UserDefault.swift in Sources */,
 				8B28C2A02387F5FD00E7638F /* MotorPickerView.swift in Sources */,
 				8B15E6F52386930D000E30F8 /* AppDelegate.swift in Sources */,
 				8B28C29C2387F01B00E7638F /* Motors.swift in Sources */,
@@ -242,7 +267,10 @@
 				8B28C2A5238827B900E7638F /* PickerView.swift in Sources */,
 				8B15E6F72386930D000E30F8 /* SceneDelegate.swift in Sources */,
 				8B15E6F92386930D000E30F8 /* ContentView.swift in Sources */,
+				8B1D220E23D70B6D001A9E4C /* PropertyListValue.swift in Sources */,
+				8B1D221023D70C5C001A9E4C /* Key.swift in Sources */,
 				8B28C2A22387F8DF00E7638F /* PreferedEngines.swift in Sources */,
+				8B1D221223D70D7D001A9E4C /* Storage.swift in Sources */,
 				8B28C29E2387F53000E7638F /* SelectableRow.swift in Sources */,
 				8B28C2912386BF0600E7638F /* SleepCalculatorView.swift in Sources */,
 			);

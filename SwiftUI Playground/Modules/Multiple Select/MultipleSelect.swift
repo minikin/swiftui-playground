@@ -16,7 +16,7 @@ struct MultipleSelect: View {
         Form {
             Section(header: Text("Types").font(.caption)) {
                 configureMotorPickerView()
-                //PickerView()
+                // PickerView()
             }
             .navigationBarTitle("Pickers")
         }
