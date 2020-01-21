@@ -9,15 +9,15 @@
 import Foundation
 
 struct Key: RawRepresentable {
-	let rawValue: String
+    let rawValue: String
 }
 
 extension Key: ExpressibleByStringLiteral {
-	init(stringLiteral: String) {
-		rawValue = stringLiteral
-	}
+    init(stringLiteral: String) {
+        rawValue = stringLiteral
+    }
 }
 
 extension Key {
-	static let isFirstLaunch: Key = "isFirstLaunch"
+    static let isFirstLaunch: Key = "isFirstLaunch"
 }
